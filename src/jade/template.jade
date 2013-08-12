@@ -20,7 +20,7 @@ html.no-js
     link(rel='apple-touch-icon', sizes='144x144', href='../images/apple-icons/apple-touch-icon-144x144-precomposed.png')
     meta(name='msapplication-TileImage', content='../images/apple-icons/apple-touch-icon-144x144-precomposed.png')
     meta(name='msapplication-TileColor', content='#ffffff')
-    // Modernizr 
+    // Modernizr
     script(src='../js/libs/modernizr-2.6.2.min.js')
     // jQuery 
     script(type='text/javascript', src='../js/libs/jquery-1.10.2.min.js')
@@ -65,17 +65,32 @@ html.no-js
 
   body
     header.white.band.padded
-      .container
-        h2.AverageSans
-          | GroundworkCSS
+      .container.mutalisk
+        h2.AverageSans.padded
+          img(src='../images/mutalisk2.gif')
+          b Mutalisk
+          small  (béta)
         nav.nav.inline.menu.gap-top
           ul
             li
               a(href='./home.html')
                 i.icon-home
-                |  Home
+                |  Főoldal
             li.menu
-              a(href='#') Example Layouts
+              a(href='#') SAJÁT TEMPLATEK
+              ul
+                li
+                 a(href='../layouts/new_zealand/home.html') NewZealand
+                li
+                 a(href='../layouts/artistic/home.html') Artistic
+                li
+                 a(href='../layouts/logistic1/home.html') Logistic
+                li
+                 a(href='../layouts/sunshine/home.html') Sunshine
+                li
+                 a(href='../layouts/ollofoto/home.html') Ollófotó
+            li.menu
+              a(href='#') Példa elrendezések
               ul
                 li
                   a(href='./layout-1.html') Layout 1
@@ -92,7 +107,7 @@ html.no-js
                 li
                   a(href='./layout-7.html') Ecommerce
             li.menu
-              a(href='#') Example Components Usage
+              a(href='#') Példa funkciók
               ul
                 li
                   a(href='./grid.html', title='Responsive grid system, grid adapters and helpers') Grid
@@ -124,6 +139,22 @@ html.no-js
                   a(href='./modals.html', title='Magnific Popup modals') Magnific Popup
                 li
                   a(href='./cycle2.html', title='Cycle2 Slideshows') Cycle2
+            li.menu
+              a(href='#') Hozzáadott funkciók
+              ul
+                li
+                  a(href='http://thecssguru.freeiz.com/animate/') SASS Animation
+            li.menu
+              a(href='#') Eszközök
+              ul
+                li
+                  a(href='http://html2jade.aaron-powell.com/', title='HTML TO JADE') Html to Jade konverter
+                li
+                  a(href='http://www.lipsum.com/', title='Lipsum') Lorem Ipsum
+                li
+                  a(href='http://placehold.it/', title='Placehold it') Placeholders
+                li
+                  a(href='http://unsplash.com/', title='Unsplash') Dummy images
 
     block content
 
@@ -133,29 +164,12 @@ html.no-js
           .row
             .three.fourths.padded
               p
-                | GroundworkCSS is 
-                b 100% free
+                | Mutalisk_beta
+                b  powered by GROUNDWORKS CSS
                 |  and 
-                b open source
+                b open source platforms
                 |. 
-                a.orange.button(href='mailto:groundwork@sidereel.com')
-                  | Give me a shout 
-                  i.icon-envelope-alt
-                |  if you find it useful and have any feedback.
-              p
-                | Find a bug? Let me know by 
-                a.red.button(href="https://github.com/groundworkcss/groundwork/issues", target="_blank")
-                  | filing an issue 
-                  i.icon-github
-                |  on Github.
-            .one.fourth.padded
-              p.large.padded.align-center
-                a.large.inline.gapped.tooltip(href="http://twitter.com/groundworkcss", target="_blank", title="@groundworkcss", style="text-decoration:none;")
-                  i.icon-twitter-sign
-                a.large.inline.gapped.tooltip(href="http://github.com/groundworkcss", target="_blank", title="@groundworkcss", style="text-decoration:none;")
-                  i.icon-github-sign
-                a.large.inline.gapped.tooltip(href="mailto:groundwork@sidereel.com", title="groundwork@sidereel.com", style="text-decoration:none;")
-                  i.icon-envelope
+
 
     // scripts
     script(type='text/javascript', src='../js/plugins/jquery.cycle2.js')

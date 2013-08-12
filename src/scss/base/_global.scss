@@ -43,3 +43,42 @@
     @extend %img;
   }
 }
+
+
+
+
+body{
+  background-image: url('../images/brickwall/brickwall.png');
+  background-repeat: repeat;
+}
+
+
+.mutalisk{
+  background-color:rgba(000,000,000,0.2);
+  border-radius: 5px;
+  h2 img{
+    padding: 0.2em;
+  }
+}
+
+ul.button-list li a, ol.button-list li a {
+  background-color: #E70F0F !important;
+  border: 1px solid #981919 !important;
+}
+
+.main_doc{
+  background-color: rgba(255,255,255,0.4);
+  border-radius: 10px;
+  border: 2px solid darkgrey;
+}
+
+.powered{
+  background-color: rgba(145, 145, 145, 0.2);
+  border-radius: 55px;
+  img{
+    width: 35%;
+    margin: 1.5em;
+  }
+}
+
+
