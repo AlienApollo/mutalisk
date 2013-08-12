@@ -1,0 +1,111 @@
+extends template
+
+block title
+  title NewZealand &hearts;
+
+block content
+  .container.content
+    .padded.logo
+     img(src='images/logo.png', alt='logo')
+    nav.nav.inline.menu.mainmenu.padded.grey
+      ul
+        li
+          a(href='./home.html')
+            i.icon-home
+            |  Főoldal
+        li.menu
+          a(href='#') Aktuális programok
+            ul
+              li
+                a(href='./lorem.html', title='test lipsum1') Lipsum1
+              li
+                a(href='./lorem2.html', title='test lipsum2') Lipsum2
+          li
+            a(href='./home.html')
+              i.icon-leaf
+              |  Turisztika
+          li
+            a(href='./home.html')
+              i.icon-info
+              |  Bevándorlás
+          li
+            a(href='./home.html')
+              i.icon-picture
+              |  Galéria
+          li
+            a(href='./home.html')
+              i.icon-envelope
+              |  Kapcsolat
+
+
+
+
+
+    .slider.cycle-slideshow(data-cycle-fx='scrollHorz', data-cycle-pause-on-hover='true')
+        img(src='http://www.terrastro.com/wp-content/gallery/lake-tekapo/church-of-good-shpepherd-panorama.jpg', alt='')
+        img(src='http://www.ultimateoe.co.nz/wp-content/uploads/2013/03/WhatIsUltimateOE.jpg', alt='')
+        img(src='http://farm9.staticflickr.com/8397/8788223791_dbe74bb78f_o.jpg', alt='')
+        img(src='http://farm8.staticflickr.com/7379/8788097937_87b53cd6d3_o.jpg', alt='')
+        img(src='http://www.thistonybridge.com/wp-content/uploads/2012/08/CloudsLake-Pukaki-New-Zealand-1.jpg', alt='')
+        img(src='https://my.vuw.ac.nz/images/newHPjun12-pipatea.jpg', alt='')
+        img(src='http://1001traveldestinations.files.wordpress.com/2013/02/1001-travel-destinations-queenstown-new-zealand-world-wallpaper-beautiful-photo-1.jpg?w=1200&h=400&crop=1', alt='')
+    .row.content_logos
+        .one.small-tablet.fourth.two-up-small-tablet.padded
+            img(src='http://www.linkletters.com.au/logos/logos-off-1.jpg', alt='')
+            p
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor.
+                .grey.button Read More ...
+        .one.small-tablet.fourth.two-up-small-tablet.padded
+            img(src='http://www.linkletters.com.au/logos/logos-off-3.jpg', alt='')
+            p
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor.
+                .grey.button Read More ...
+        .one.small-tablet.fourth.two-up-small-tablet.padded
+            img(src='http://www.linkletters.com.au/logos/logos-off-6.jpg', alt='')
+            p
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor.
+                .grey.button Read More ...
+        .one.small-tablet.fourth.two-up-small-tablet.padded
+            img(src='http://www.linkletters.com.au/logos/logos-off-8.jpg', alt='')
+            p
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor.
+                .grey.button Read More ...
+    article.row
+        aside.one.fourth.right-three.padded.border-left
+            h1 Section Heading 1
+            .row
+                .one.whole.two-up-small-tablet.one-up-mobile
+                    ul.list
+                        li Unordered list item #1
+                        li Unordered list item #2
+                        li Unordered list item #3
+                        li Unordered list item #4
+                .one.whole.two-up-small-tablet.one-up-mobile
+                    ol.list
+                        li Ordered list item #1
+                        li Ordered list item #2
+                        li Ordered list item #3
+            hr
+            h3 Section Heading 3
+            .row.right_images
+                .one.half.three-up-small-tablet.two-up-mobile.padded.align-center
+                    img(src='http://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Turdus_philomelos_-New_Zealand_-nest-8.jpg/120px-Turdus_philomelos_-New_Zealand_-nest-8.jpg', alt='')
+                .one.half.three-up-small-tablet.two-up-mobile.padded.align-center
+                    img(src='http://www.foodnavigator-asia.com/var/plain_site/storage/images/publications/food-beverage-nutrition/foodnavigator-asia.com/policy/standards-for-exotic-meat-wild-game-coming-soon-to-australia-and-new-zealand/6284278-1-eng-GB/Standards-for-exotic-meat-wild-game-coming-soon-to-Australia-and-New-Zealand_dnm_thumb.gif', alt='')
+                .one.half.three-up-small-tablet.two-up-mobile.padded.align-center
+                    img(src='http://jmilne.org/nz/thumbnails/NZ0436.jpg', alt='')
+                .one.half.three-up-small-tablet.two-up-mobile.padded.align-center
+                    img(src='http://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Port_Chalmers_Bank_of_New_Zealand.JPG/120px-Port_Chalmers_Bank_of_New_Zealand.JPG', alt='')
+                .one.half.three-up-small-tablet.two-up-mobile.padded.align-center
+                    img(src='http://www.weggphotos.com/images/gallery/thumbnails/NZ-119_1_small.jpg', alt='')
+                .one.half.three-up-small-tablet.two-up-mobile.padded.align-center
+                    img(src='http://www.weggphotos.com/images/gallery/thumbnails/NZ-44_Karikari_Bch_small.jpg', alt='')
+        section.three.fourths.left-one.padded.maincontent
+            img.pull-left.gap-right.gap-bottom(src='http://www.experiencenz.com/images/tours/AAT-Kings-Guided-Tours-18-Day-Best-of-New-Zealand.jpg', alt='')
+            h1 Section Heading 1
+            p
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in.
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in.
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in.
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in.
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in.

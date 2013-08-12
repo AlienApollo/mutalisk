@@ -1,0 +1,158 @@
+@import "compass";
+
+
+body{
+  background-image: url('../images/spec/bg.png');
+  background-repeat: none;
+  background-position: top center;
+  font-family: Voces;
+}
+
+p{
+  font-family: Voces;
+}
+
+.langmenu{
+  background-color: rgba(white, 0.4);
+  @include border-radius(10px);
+  img{
+    margin-right: 0.6em;
+  }
+}
+
+.main_footer{
+  margin-top: 2.5em;
+  background-color: rgba(60,60,60,1);
+  @include box-shadow(inset 0 10px 10px #000000);
+  width: 100%;
+  img{
+    border: 5px solid #222;
+    @include border-radius(10px);
+    width:60%;
+  }
+  h3{
+    color: #fcdd44;
+    @include text-shadow(0px 0px 2px #999);
+  }
+  p{
+    color: #888;
+  }
+}
+
+.main_footer_menu{
+  background-color: rgba(0,0,0,0.2);
+  @include border-radius(10px);
+  .nav{
+    ul{
+      li a{
+        background-color: rgba(0,0,0,0);
+        font-size: 0.75em;
+        color: grey;
+      }
+      li a:hover{
+        color: rgb(252,221,68);
+        background-color: rgba(0,0,0,0.1);
+        @include box-shadow(0px 0px 1px #999999);
+        @include text-shadow(0px 0px 1px #FF7200);
+      }
+    }
+  }
+  .inline ul li a{
+    border: none;
+  }
+  p{
+    color: rgba(252,221,68,0.5);
+  }
+}
+
+.nav.menu:before{
+  font-weight: bolder;
+  text-align: center;
+}
+
+.carousel{
+  margin-top: 2em;
+}
+.cycle-slideshow{
+  img{
+    border: 8px solid white;
+}
+}
+
+.conbox{
+  .one{
+    width: 30%;
+    background-color: rgba(white,0.6);
+    padding: 2em;
+    min-height: 30em;
+    cursor: pointer;
+    display: block;
+    @include transition(1.5s);
+    @include box-shadow(0px 0px 10px #333333);
+    @include border-radius(20px);
+    &:hover{
+      background-color: rgba(white,0.8);
+      @include border-radius(10px);
+      img{
+        @include border-radius(20px);
+        border: 2px solid grey;
+        @include transition(1.5s);
+      }
+
+    }
+    &:first-child{
+      margin-right: 2%;
+      margin-left: 3%;
+    }
+    &:last-child{
+      margin-left: 2%;
+    }
+    h2{
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.5em;
+    }
+    img{
+      border: 2px solid white;
+      @include border-radius(10px);
+      @include transition(1.5s);
+    }
+    p{
+      text-align: justify;
+      font-size: 1em;
+    }
+
+
+  }
+}
+
+article.content{
+  background-color: rgba(white,0.7);
+  padding: 2em;
+  margin-top: 3em;
+  @include border-radius(15px);
+  @include box-shadow(0px 0px 10px #333);
+  img{
+    border: 2px solid grey;
+    @include border-radius(15px);
+    @include box-shadow(0px 0px 10px #777);
+  }
+  img.artimage{
+   width: 30%;
+
+  }
+}
+
+
+
+@media only screen and (max-width:1085px) {
+  .mainmenu{ background-color: lighten(rgba(238, 203, 43, 1),35%);text-align: center;border: 2px solid grey; @include border-radius(10px);margin-top: 1em; @include box-shadow();}
+  .nav ul li a{ background-color: rgba(white,0); }
+  nav.inline ul li a, inline.nav ul li a{ border: none !important; }
+}
+
+
+@media only screen and (max-width:767px) {
+  .mainmenu{ margin-top: 2em; @include box-shadow();}
+  .conbox .one {margin-left: 0 !important; margin-right: 0 !important; margin-top: 3%;}
+}

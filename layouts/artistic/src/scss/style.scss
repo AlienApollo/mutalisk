@@ -1,0 +1,224 @@
+@import "compass";
+
+
+body{
+  background-image: url('../images/shattered.png');
+  background-repeat: repeat;
+  font-family: Kavoon;
+}
+
+p{
+  font-family: Arial;
+}
+
+
+
+header{
+  position:fixed;
+  width:100%;
+  top:0;
+  z-index: 9999;
+  @include background-image(linear-gradient(top, rgba(211,211,211,1) 40%, rgba(196,196,196,1) 51%, rgba(255,255,255,0.8) 100%));
+  border-bottom: 2px solid #444;
+  @include box-shadow(black 0px 0px 10px);
+  h1{
+    margin-bottom: 0;
+    font-size: 3em;
+  }
+}
+
+.topcontact{
+  @include background-image(linear-gradient(top, rgba(112,112,112,1) 0%,rgba(38,38,38,1) 56%,rgba(102,102,102,1) 100%));
+  width: 100%;
+  display: block;
+  border-bottom: 2px solid #262626;
+  a{
+    margin-left: 0.5em;
+    background-color: none;
+    @include border-radius(5px);
+    @include transition(2s);
+    :hover{
+      background-color: rgba(white,0.2);
+      @include border-radius(5px);
+      @include transition(2s);
+    }
+  }
+}
+
+
+.logo img{
+
+}
+
+.mainmenu{
+  padding: 2em;
+
+}
+
+.content{
+
+
+}
+
+.maincontent{
+  margin-top: 6%;
+  p{
+    text-align: justify;
+  }
+  img{
+    border-radius: 5px;
+    border: 2px solid grey;
+  }
+}
+
+.content_logos{
+  .conlog{
+    background-color: rgba(#777,0.1);
+    padding: 1em;
+    margin: 0.5em;
+    @include border-radius(20px);
+
+    p{
+      text-align: justify;
+
+    }
+
+  }
+
+
+}
+
+.carousel{
+  max-width: 100%;
+  margin: 0px;
+  margin-bottom: 3em;
+  margin-top: 11em;
+  border-top: 2px groove #555;
+  border-bottom: 2px groove #555;
+  img{
+    @include box-shadow(black 0px 0px 10px);
+  }
+
+}
+
+
+.tabber{
+  margin-top: 5%;
+}
+
+.tabs{
+  ul{
+    li{
+      &:nth-child(1){
+        background-color: rgba(red,0.1);
+      }
+      &:nth-child(2){
+        background-color: rgba(magenta,0.1);
+      }
+      &:nth-child(3){
+        background-color: rgba(blue,0.1);
+      }
+      &:nth-child(4){
+        background-color: rgba(yellow,0.1);
+      }
+      &:nth-child(5){
+        background-color: rgba(green,0.1);
+      }
+      a{
+        height:6em;
+        text-align: center;
+
+      }
+      a img{
+        display: block;
+        margin: 0 auto;
+        padding-top: 1.5em;
+
+      }
+    }
+  }
+  .tcontent{
+    img{
+      display: block;
+      margin: 0 auto;
+      width: 50%;
+      @include border-radius(20px);
+    }
+    .gallery img{
+      float: left;
+      width: 20%;
+      margin-left: 3.5em;
+      margin-top: 3.5em;
+    }
+  }
+}
+
+.members{
+  margin-top: 13%;
+  .one{
+    background-color: rgba(#777,0.1);
+    @include border-radius(15px);
+    margin-left: 2.5em;
+    width: 30%;
+    img{
+      @include border-radius(10px);
+    }
+    h4{
+      margin-bottom: 0px;
+    }
+    span{
+      display: block;
+      margin-bottom: 1.5em;
+    }
+    p{
+      padding: 1em;
+      text-align: justify;
+    }
+    .member-social{
+      width:60%;
+      margin: 0 auto;
+      background-color: rgba(white, 0.4);
+      @include border-radius(15px);
+      a{
+        margin-left: 1em;
+      }
+    }
+  }
+}
+
+
+footer{
+  width: 100%;
+  margin-top: 12em;
+  background-color: rgba(#333333,0.7);
+  .main_footer{
+    p{
+      font-family: Kavoon;
+      margin-bottom: 0;
+      color: #adadad;
+      a{
+        margin-left: 0.5em;
+        text-decoration: none;
+        color: #56c3ea;
+        background-color: rgba(255,255,255,0.2);
+        padding: 0.5em;
+        @include border-radius(15px);
+        @include transition(1s);
+        border: 1px solid #aeaeae;
+      }
+      :first-child{
+        color: #3B5998;
+      }
+      :last-child{
+        color: #a42c29;
+      }
+      a:hover{
+        color: white;
+        background-color: lighten(black, 30%);
+        @include border-radius(10px);
+        @include transition(1s);
+      }
+    }
+  }
+}
+

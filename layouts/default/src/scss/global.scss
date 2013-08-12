@@ -1,0 +1,54 @@
+//SETTINGS
+@import "edited/settings"; //|SAJÁT|
+
+// ALL CORE
+@import "compass";      // required (http://compass-style.org/install/)
+@import "../../../../src/scss/core/constants";    // required
+@import "../../../../src/scss/core/breakpoints";  // required
+@import "../../../../src/scss/core/defaults";     // required
+@import "../../../../src/scss/core/mixins-core";       // required
+
+
+// ALL BASE
+@import "../../../../src/scss/base/reset";
+@import "../../../../src/scss/base/global";
+@import "../../../../src/scss/base/helpers";
+@import "../../../../src/scss/base/grid";
+@import "../../../../src/scss/base/flex-box";
+
+
+
+// ALL TYPE
+@import "../../../../src/scss/type/webfonts";     // optional
+@import "../../../../src/scss/type/typography";   // optional
+
+
+// ALL ICONS
+@import "../../../../src/scss/icons/font-awesome";
+
+// ALL RESPONSIVE
+@import "../../../../src/scss/responsive/helpers-responsive";
+@import "../../../../src/scss/responsive/desktop";
+@import "../../../../src/scss/responsive/ipad";
+@import "../../../../src/scss/responsive/small-tablet";
+@import "../../../../src/scss/responsive/mobile";
+
+
+// ALL NAV
+@import "../../../../src/scss/nav/buttons";      // optional (required by navigation) |SAJÁT|
+@import "../../../../src/scss/nav/navigation";   //
+@import "../../../../src/scss/nav/tabs";         // optional
+
+
+// ALL UI
+@import "../../../../src/scss/ui/messages";
+@import "../../../../src/scss/ui/callouts";
+@import "../../../../src/scss/ui/tables";
+@import "../../../../src/scss/ui/tooltips";
+@import "../../../../src/scss/ui/modals";
+
+
+// ALL FORM
+@import "../../../../src/scss/form/forms";        // optional
+@import "../../../../src/scss/form/tiles";        // optional
+
