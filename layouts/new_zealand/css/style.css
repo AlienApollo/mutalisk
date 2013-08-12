@@ -1,0 +1,79 @@
+/* line 4, ../src/scss/style.scss */
+body {
+  background-image: url("../images/tweed/tweed.png");
+  background-repeat: repeat;
+}
+
+/* line 9, ../src/scss/style.scss */
+.content {
+  background-color: white;
+  border-radius: 20px;
+  -webkit-box-shadow: #111111 0px 0px 10px;
+  -moz-box-shadow: #111111 0px 0px 10px;
+  box-shadow: #111111 0px 0px 10px;
+}
+
+/* line 15, ../src/scss/style.scss */
+.logo img {
+  width: 20%;
+  height: 20%;
+  float: left;
+}
+
+/* line 25, ../src/scss/style.scss */
+.slider {
+  float: left;
+  width: 100%;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  -webkit-box-shadow: black 0px 0px 5px;
+  -moz-box-shadow: black 0px 0px 5px;
+  box-shadow: black 0px 0px 5px;
+}
+
+/* line 34, ../src/scss/style.scss */
+.maincontent {
+  margin-top: 3%;
+}
+/* line 36, ../src/scss/style.scss */
+.maincontent p {
+  text-align: justify;
+}
+/* line 39, ../src/scss/style.scss */
+.maincontent img {
+  border-radius: 5px;
+  border: 2px solid grey;
+}
+
+/* line 45, ../src/scss/style.scss */
+.content_logos {
+  border-bottom: 2px solid #333;
+}
+/* line 47, ../src/scss/style.scss */
+.content_logos p {
+  text-align: justify;
+}
+/* line 51, ../src/scss/style.scss */
+.content_logos img {
+  width: 100%;
+  display: block;
+}
+/* line 56, ../src/scss/style.scss */
+.content_logos .button {
+  display: block;
+}
+
+/* line 61, ../src/scss/style.scss */
+.right_images img {
+  border-radius: 10px;
+  border: 1px solid #555;
+}
+
+/* line 65, ../src/scss/style.scss */
+.main_footer {
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: black 0px 0px 5px;
+  -moz-box-shadow: black 0px 0px 5px;
+  box-shadow: black 0px 0px 5px;
+  border-radius: 5px;
+}

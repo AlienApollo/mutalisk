@@ -1,0 +1,41 @@
+/* line 3, ../src/scss/style.scss */
+body { font-family: Kavoon; color: black; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(2%, #f2d21d), color-stop(30%, #e5af1b), color-stop(64%, #ef612d), color-stop(100%, #a52626)); background-image: -webkit-linear-gradient(top, #f2d21d 2%, #e5af1b 30%, #ef612d 64%, #a52626 100%); background-image: -moz-linear-gradient(top, #f2d21d 2%, #e5af1b 30%, #ef612d 64%, #a52626 100%); background-image: -o-linear-gradient(top, #f2d21d 2%, #e5af1b 30%, #ef612d 64%, #a52626 100%); background-image: linear-gradient(top, #f2d21d 2%, #e5af1b 30%, #ef612d 64%, #a52626 100%); }
+
+/* line 11, ../src/scss/style.scss */
+p { font-family: Georgia; }
+
+/* line 15, ../src/scss/style.scss */
+.mainhead { background-color: rgba(255, 255, 255, 0.6); -webkit-box-shadow: 0px 0px 10px #333333; -moz-box-shadow: 0px 0px 10px #333333; box-shadow: 0px 0px 10px #333333; -webkit-border-radius: 20px; -moz-border-radius: 20px; -ms-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; }
+/* line 19, ../src/scss/style.scss */
+.mainhead .logoimg { position: absolute; top: 0; left: 0; z-index: 1000; width: 25%; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85); opacity: 0.85; }
+
+/* line 30, ../src/scss/style.scss */
+.cycle-slideshow img { -webkit-border-radius: 20px; -moz-border-radius: 20px; -ms-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; -webkit-box-shadow: 0px 0px 5px #333333; -moz-box-shadow: 0px 0px 5px #333333; box-shadow: 0px 0px 5px #333333; }
+
+/* line 36, ../src/scss/style.scss */
+.asdf { background-color: rgba(255, 93, 2, 0.68); }
+/* line 38, ../src/scss/style.scss */
+.asdf:hover { background-color: rgba(255, 158, 104, 0.68); }
+
+/* line 43, ../src/scss/style.scss */
+.mainmenu { position: absolute; z-index: 1001; top: 70%; left: 0; }
+/* line 50, ../src/scss/style.scss */
+.mainmenu ul li a { padding: 1.25em 1em; font-size: 1.3em; background: rgba(255, 93, 2, 0.68); text-shadow: 1px 1px #ffab17; }
+/* line 56, ../src/scss/style.scss */
+.mainmenu ul li a:hover { background: rgba(255, 93, 2, 0.9); }
+
+/* line 63, ../src/scss/style.scss */
+.main_footer { background-color: rgba(255, 255, 255, 0.3); padding: 2.5em; margin-top: 2em; -webkit-border-radius: 20px; -moz-border-radius: 20px; -ms-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; -webkit-box-shadow: 0px 0px 10px #333333; -moz-box-shadow: 0px 0px 10px #333333; box-shadow: 0px 0px 10px #333333; }
+/* line 69, ../src/scss/style.scss */
+.main_footer img { display: block; cursor: pointer; width: 75%; margin-top: 0.75em; margin-bottom: 0.75em; -webkit-border-radius: 80px; -moz-border-radius: 80px; -ms-border-radius: 80px; -o-border-radius: 80px; border-radius: 80px; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=45); opacity: 0.45; -webkit-transition: 1.5s; -moz-transition: 1.5s; -o-transition: 1.5s; transition: 1.5s; -webkit-box-shadow: 5px 3px 5px #333333; -moz-box-shadow: 5px 3px 5px #333333; box-shadow: 5px 3px 5px #333333; }
+/* line 79, ../src/scss/style.scss */
+.main_footer img:hover { -webkit-border-radius: 20px; -moz-border-radius: 20px; -ms-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; }
+
+/* line 86, ../src/scss/style.scss */
+.content { padding: 1em; }
+
+/* line 90, ../src/scss/style.scss */
+.main_content { padding: 5em; -webkit-border-radius: 20px; -moz-border-radius: 20px; -ms-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(255, 255, 255, 0.8))); background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 100%); background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 100%); background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 100%); background-image: linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 100%); }
+
+/* line 97, ../src/scss/style.scss */
+.righter img { border: 1px groove grey; -webkit-border-radius: 60px; -moz-border-radius: 60px; -ms-border-radius: 60px; -o-border-radius: 60px; border-radius: 60px; }

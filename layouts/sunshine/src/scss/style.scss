@@ -1,0 +1,101 @@
+@import "compass";
+
+body{
+  font-family: Kavoon;
+  color: black;
+  @include background-image(linear-gradient(top, rgba(242,210,29,1) 2%,rgba(229,175,27,1) 30%,rgba(239,97,45,1) 64%,rgba(165,38,38,1)  100%));
+}
+
+$color : rgba(255, 93, 2, 0.68);
+
+p{
+  font-family: Georgia;
+}
+
+.mainhead{
+  background-color: rgba(white,0.6);
+  @include box-shadow(0px 0px 10px #333333);
+  @include border-radius(20px);
+  .logoimg{
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 1000;
+    width: 25%;
+    @include opacity(0.85);
+  }
+}
+
+.cycle-slideshow{
+   img{
+     @include border-radius(20px);
+     @include box-shadow(0px 0px 5px #333333);
+   }
+}
+
+.asdf{
+  background-color: $color;
+  &:hover{
+    background-color: lighten($color, 20%);
+  }
+}
+
+.mainmenu{
+  position: absolute;
+  z-index: 1001;
+  top:70%;
+  left:0;
+  ul{
+    li{
+      a{
+        padding: 1.25em 1em;
+        font-size: 1.3em;
+        background: $color;
+        @include text-shadow(1px 1px #FFAB17);
+      }
+      a:hover{
+        background: rgba(255, 93, 2, 0.9);
+      }
+    }
+  }
+}
+
+.main_footer{
+  background-color: rgba(white,0.3);
+  padding: 2.5em;
+  margin-top: 2em;
+  @include border-radius(20px);
+  @include box-shadow(0px 0px 10px #333333);
+  img{
+    display: block;
+    cursor: pointer;
+    width: 75%;
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
+    @include border-radius(80px);
+    @include opacity(0.45);
+    @include transition(1.5s);
+    @include box-shadow(5px 3px 5px #333333);
+    &:hover{
+      @include border-radius(20px);
+      @include opacity(1);
+    }
+  }
+}
+
+.content{
+  padding: 1em;
+}
+
+.main_content{
+  padding: 5em;
+  @include border-radius(20px);
+  @include background-image(linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,0.8) 100%));
+}
+
+.righter{
+  img{
+    border: 1px groove grey;
+    @include border-radius(60px);
+  }
+}
