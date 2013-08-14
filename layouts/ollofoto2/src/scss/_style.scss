@@ -1,0 +1,562 @@
+body{
+  font-family: OpenSans, 'sans-serif';
+  color: black;
+  background-color: #FFFFFF ;
+  font-weight: 600;
+}
+
+#container{
+  width: 100%;
+  border-top: 2em solid #3b3c3d;
+  background-color: white;
+  float:left;
+}
+
+.region{
+
+}
+
+.region.header {
+  width:100%;
+  background-color: #f7f7f7;
+  float: left;
+  div:only-of-type{
+    max-width:960px;
+    margin:0 auto;
+    display: block;
+    after{
+      clear: both;
+      float: none;
+    }
+
+  }
+}
+
+
+.logo{
+  @extend .two;
+  @extend .ninth;
+  @extend .pull-left;
+  position: relative;
+  top:-1.8em;
+  left:0;
+
+}
+
+.szinvaltas{
+  position: absolute;
+  top: 1%;
+  right: 13%;
+  color: whitesmoke;
+  width:7em;
+  div{
+    width:7em !important;
+  }
+}
+
+.content{
+  background-color: #f7f7f7;
+  border-left: 1px solid #e4e4e4;
+  border-right: 1px solid #e4e4e4;
+  display: block;
+  @extend .container;
+}
+
+.content .h2 {
+  color: #37878d;
+  font-size: 1.5em;
+}
+
+.leftpadded{
+   padding-left: 2.5em;
+}
+
+.content .image{
+
+}
+
+.fomenu{
+  padding-top: 3em;
+  display: block;
+  @extend .seven;
+  @extend .ninth;
+  nav{
+    @extend .inline;
+    @extend .nav;
+}
+}
+
+
+
+
+.szolgaltatasok{
+  @extend .leftpadded;
+  @extend .two;
+  @extend .third;
+  margin-top: 4em;
+}
+
+.fenykepezo{
+  float: right;
+  :after{
+    clear: both;
+  }
+}
+
+.fokategoriak {
+  margin-left: 0 !important;
+  width: 100%;
+  float: left;
+}
+.fokategoriak li {
+  position:relative;
+  float:left;
+  text-align: center;
+  height:380px;
+  overflow: hidden;
+  border: 3px solid #f7f7f7;
+  z-index:501;
+  background-color: #f7f7f7;
+}
+.fokategoriak li p {
+  font-size: 16pt;
+  padding:40px 0 20px;
+}
+
+.fokategoriak li img {
+  border-radius: 10px;
+  -ms-transition: 0.5s ease;
+  -moz-transition:0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: 0.5s ease;
+  -ms-transition: 0.5s;
+  -moz-transition:0.5s;
+  -webkit-transition: 0.5s;
+
+}
+.fokategoriak li:hover img {
+  margin-top:2em;
+}
+.roundedbox {
+  position:relative;
+  top:-297px;
+  left:5%;
+  width:90%;
+  height:74%;
+  border-radius: 8px;
+  border:3px solid white;
+  z-index:500;
+  background-color: rgba(88,88,88,0);
+  -ms-transition: 0.5s ease;
+  -moz-transition:0.5s ease;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -ms-transition: 0.5s;
+  -moz-transition:0.5s;
+  -webkit-transition: 0.5s;
+}
+.fokategoriak li:hover .roundedbox{
+  position:relative;
+  top:-304px;
+  left:0px;
+  width:100%;
+  height:100%;
+  border-radius: 8px;
+  border:3px solid;
+  border-color: rgba(255, 255, 255, 0);
+  background-color: rgba(88,88,88,0.75);
+  z-index:500;
+}
+/* boxicon a kék ikon ami felugrik hoverre */
+
+.boxy{
+  width: 100%;
+  padding-left: 30%;
+  display: block;
+  height: 20%;
+  position: absolute;
+}
+
+.boxicon {
+  background-image:url("../images/boxicon.png");
+  position:absolute;
+  top: -2em;
+  opacity: 0;
+  transition: .5s ease;
+  -ms-transition: 0.5s ease;
+  -moz-transition:0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -ms-transform:scale(0.2);
+  -moz-transform:scale(0.2);
+  -webkit-transform: scale(0.2);
+  transform:scale(0.2);
+}
+
+.fokategoriak li:hover .boxicon {
+  width: 117px;
+  height:130px;
+  opacity:1;
+  z-index: 505;
+  background-image:url("../images/boxicon.png");
+  -ms-transform: scale(0.9);
+  -moz-transform:scale(0.9);
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+.kategoria-text h3 {
+  width:92%;
+  position: absolute;
+  top:225px;
+  margin-left: auto !important;
+  color:white;
+  font-size: 16pt;
+  text-align: center;
+  opacity: 0;
+  z-index: 506;
+
+}
+
+.kategoria-text p {
+  position: absolute;
+  padding:0 2em;
+  top:230px;
+  margin-left: auto !important;
+  color:white;
+  font-size: 11pt !important;
+  font-style: italic;
+  opacity: 0;
+  width:92%;
+  z-index: 506;
+
+}
+
+.fokategoriak li:hover .kategoria-text h3 {
+  opacity: 1;
+  transition:opacity 0.6s ease 0.2s;
+  -ms-transition:opacity 0.6s ease 0.2s;
+  -moz-transition:opacity 0.6s ease 0.2s;
+  -webkit-transition:opacity 0.6s ease 0.2s;
+}
+
+.fokategoriak li:hover .kategoria-text p {
+  opacity: 1;
+  transition:opacity 1s ease 0.3s;
+  -ms-transition:opacity 1s ease 0.3s;
+  -moz-transition:opacity 1s ease 0.3s;
+  -webkit-transition:opacity 1s ease 0.3s;
+}
+
+.ajanlo-text , .egyedi-foto-text{
+  margin-top: 6em;
+}
+
+.dark_bg_h2{
+  padding: 2em;
+}
+
+.dark_bg_h2 h2{
+  background-color: #3b3c3d;
+  font-size: 2.5em;
+  display: table;
+  padding-left: 0.35em;
+  padding-right: 0.15em;
+  margin-bottom: 0 !important;
+  line-height: 1.4em;
+}
+
+.dark_bg_h2 first p{
+  background-color: #3b3c3d;
+  display: table;
+  color: #fff;
+  font-size: 1.2em;
+  padding-left: 0.45em;
+  padding-right: 0.15em;
+  padding-bottom: 0.3em;
+}
+
+.texter{
+  padding-top: 1.5em;
+}
+
+.ajanlo-text h2 {
+  color:#eab026;
+
+}
+.egyedi-foto-text h2 {
+  color:#3dbbc4;
+}
+/* Kapitális kezdőbetű a paragrafusoknál */
+
+.firstCapital p:first-letter {
+  font-size: 2em;
+}
+
+/* 3 icons on bottom of main page */
+.bottomicons{
+  padding: 10px;
+  float: left;
+  width:100%;
+  ul{
+    margin-left: 0 !important;
+    list-style: none !important;
+    li {
+      @extend .one;
+      @extend .third;
+      p{
+          text-align: center;
+          font-size: 16pt;
+          font-weight: 300;
+      }
+      }
+    }
+}
+
+
+.bottomicon_bg{
+  float: none !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.bottomicons ul
+.bottomicon_bg {
+  width: 268px;
+  height: 268px;
+  background-image: url("http://ollo.webolucio.hu/site/img/3icons_border.png");
+  position: relative;
+}
+.bottomicon_bgcolor {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  width: 220px;
+  height: 219px;
+  background-color: white;
+}
+
+.bottom-icon-text{
+  width: 100%;
+}
+.bottomicons .bottom-icon-text
+#photo_icon {}
+
+/* the rocket */
+
+#rocket_icon {
+  width: 105px;
+  height: 163px;
+  background-image: url("http://ollo.webolucio.hu/site/img/rocket.png");
+  position: absolute;
+  top:50px;
+  left:80px;
+  -ms-transform: scale(0.8);
+  -moz-transform:scale(0.8);
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+  transition: .5s ease;
+  -ms-transition: 0.5s ease;
+  -moz-transition:0.5s ease;
+  -webkit-transition: all 0.5s ease;
+}
+#smoke_01 {
+  width: 220px;
+  height: 37px;
+  position: absolute;
+  bottom:25px;
+  left:24px;
+  background-image: url("http://ollo.webolucio.hu/site/img/smoke_01.png");
+  opacity: 0;
+  transition: .5s ease;
+  -ms-transition: 0.5s ease;
+  -moz-transition:0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  float: none !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+
+}
+#smoke_02 {
+  width: 220px;
+  height: 37px;
+  position: absolute;
+  bottom:25px;
+  left:24px;
+  background-image: url("http://ollo.webolucio.hu/site/img/smoke_02.png");
+  opacity: 0;
+  transition: .5s ease;
+  -ms-transition: 0.5s ease;
+  -moz-transition:0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  float: none !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+
+}
+#smoke_03 {
+  width: 220px;
+  height: 37px;
+  position: absolute;
+  bottom:25px;
+  left:24px;
+  background-image: url("http://ollo.webolucio.hu/site/img/smoke_03.png");
+  opacity: 0;
+  transition: .5s ease;
+  -ms-transition: 0.5s ease;
+  -moz-transition:0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  float: none !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+
+}
+/* hover state for rocket */
+.bottomicons ul li:hover #rocket_icon {
+  -ms-transform: scale(1);
+  -moz-transform:scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  top:30px;
+  left:84px;
+  transition:all 1s cubic-bezier(0.9,0,1,1);
+  -ms-transition:all 1s cubic-bezier(0.9,0,1,1);
+  -moz-transition:all 1s cubic-bezier(0.9,0,1,1);
+  -webkit-transition:all 1s cubic-bezier(0.9,0,1,1);
+}
+.bottomicons ul li:hover #smoke_01 {
+  opacity: 0.6;
+  height: 67px;
+  transition:all 0.6s ease-in-out;
+  -ms-transition:all 0.6s ease-in-out;
+  -moz-transition:all 0.6s ease-in-out;
+  -webkit-transition:all 0.6s ease-in-out;
+
+}
+.bottomicons ul li:hover #smoke_02 {
+  opacity: 0.6;
+  height: 67px;
+  transition:all 0.6s ease-in-out 0.2s;
+  -ms-transition:all 0.6s ease-in-out 0.2s;
+  -moz-transition:all 0.6s ease-in-out 0.2s;
+  -webkit-transition:all 0.6s ease-in-out 0.2s;
+
+}
+.bottomicons ul li:hover #smoke_03 {
+  opacity: 1;
+  height: 67px;
+  transition:all 0.6s ease-in-out 0.4s;
+  -ms-transition:all 0.6s ease-in-out 0.4s;
+  -moz-transition:all 0.6s ease-in-out 0.4s;
+  -webkit-transition:all 0.6s ease-in-out 0.4s;
+
+}
+#star_icon {}
+
+.carousel{
+  height: 20em;
+  margin-bottom: 2.5em;
+  .cycle-slideshow{
+    height: 30em;
+  }
+  img{
+    height:70%;
+    width: 130%;
+  }
+}
+
+.gallery_categories{
+  width: 90%;
+  margin-left: 6%;
+  .one{
+    margin-top: 4%;
+    margin-right: 2%;
+    width: 23%;
+    text-align: center;
+    h2{
+      font-family: DancingScript;
+      font-size: 2.5em;
+      margin-top: 0.2em;
+      margin-bottom: 0.1em;
+      color: white;
+    }
+    p{
+      padding: 0.5em;
+      text-align: justify;
+      color: white;
+    }
+    &:nth-child(1){
+      background-color: #ededed;
+      h2 , p{
+        color: #aaaaaa;
+      }
+    }
+    &:nth-child(1n+2){
+      background-color: #ededed;
+      h2 , p{
+        color: #aaaaaa;
+      }
+    }
+    &:nth-child(2n+2){
+      background-color: #aaaaaa;
+      h2 , p{
+        color: white;
+      }
+    }
+    &:nth-child(4n+4){
+      margin-right: 0em;
+    }
+  }
+}
+
+.gallery{
+  .one{
+    padding: 1em;
+    text-align: center;
+    max-height: 16em;
+    margin-top: 1.5em;
+    img{
+      max-height: 12em;
+    }
+    p{
+      color: #aaaaaa;
+    }
+  }
+}
+
+@media only screen and (max-width:767px) {
+  .gallery_categories{ width: 100%; margin-left: 0;}
+  .gallery_categories .one{ margin-right:0; }
+}
+
+/*
+@media only screen and (max-width: 767px){
+      nav {
+            display: block;
+            float: none;
+            background-color: #ff2222;
+            padding: 10px;
+            padding-bottom: 0;
+          }
+      nav:before, .nav:before {
+        content: attr(data-label);
+        float: left;
+        color: #3b3c3d;
+        line-height: 2.2;
+      }
+      nav > ul, .nav > ul{
+        display: block !important;
+        overflow: hidden;
+        max-height: 0;
+        width: auto;
+        margin: 0 -10px;
+        clear: both;
+        -webkit-transition: all 0.2s ease;
+        -moz-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+      }
+      nav ul li{
+        width: 100% !important;
+      }
+}
+*/
