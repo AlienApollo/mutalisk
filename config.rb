@@ -6,7 +6,7 @@ images_dir = "images"
 javascripts_dir = "js"
 fonts_dir = "font"
 
-output_style = :expanded
+output_style = :compressed
 environment = :development
 
 # To enable debug info. Uncomment:

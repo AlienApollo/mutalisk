@@ -8,13 +8,13 @@ html.lt-ie9 body { width: auto !important; }
 /* line 26, ../src/scss/global_ie.scss */
 html.lt-ie9 .container { width: auto !important; }
 /* line 31, ../src/scss/global_ie.scss */
-html.lt-ie9 input:focus, html.lt-ie9 select:focus, html.lt-ie9 textarea:focus { border-color: #eb1230; }
+html.lt-ie9 input:focus, html.lt-ie9 select:focus, html.lt-ie9 textarea:focus { border-color: #be0200; }
 /* line 37, ../src/scss/global_ie.scss */
 html.lt-ie9 span.select:after { display: none; }
 /* line 40, ../src/scss/global_ie.scss */
 html.lt-ie9 span.select select { padding: 0; height: 2.1em; vertical-align: top; }
 /* line 44, ../src/scss/global_ie.scss */
-html.lt-ie9 span.select select:focus { border: 1px solid #eb1230; }
+html.lt-ie9 span.select select:focus { border: 1px solid #be0200; }
 /* line 50, ../src/scss/global_ie.scss */
 html.lt-ie9 .social-icon { filter: none; }
 /* line 55, ../src/scss/global_ie.scss */

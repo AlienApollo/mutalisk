@@ -177,10 +177,10 @@ $font-family:         Helvetica, Arial, Geneva, sans-serif !default;
 
 // font names (no spaces or special characters, these are used to build selectors)
 $web-font-names:      AverageSans,
-                      AmericanTypewriter,OpenSans !default;
+                      AmericanTypewriter,OpenSans,DancingScript !default;
 // font files (must all be named the same as listed below and include .eot, .woff and .ttf file types)
 $web-font-files:      average-sans-webfont,
-                      americantypewriterstd-bold,opensans-semibold-webfont !default;
+                      americantypewriterstd-bold,opensans-semibold-webfont,dancingscript-webfont !default;
 
 
 ///////////////////////
@@ -206,7 +206,7 @@ $border-color:        #dddddd !default;
 $border:              #{$border-thickness} #{$border-style} #{$border-color} !default;
 
 // buttons
-$button-color: white !default;
+$button-color: #f7f7f7 !default;
 $button-border-color: white !default;
 $button-active: white !default;
 $button-text:         #3b3c3d !default;

@@ -1,5 +1,4 @@
 @import "compass";
-@import "../../../../src/scss/base/animation2";
 
 body{
   font-family: OpenSans, 'sans-serif';
@@ -15,7 +14,12 @@ body{
   float:left;
 }
 
-.mainmenu{
+.header{
+    max-width: 962px;
+    margin: 0 auto;
+}
+
+.fomenu{
   padding-top: 3.5em;
 }
 
@@ -29,6 +33,9 @@ body{
   background-color: #f7f7f7;
   border-left: 1px solid #e4e4e4;
   border-right: 1px solid #e4e4e4;
+  display: block;
+  max-width: 962px;
+  margin: 0 auto;
 }
 
 .content .h2 {
@@ -42,6 +49,10 @@ body{
 
 .content .image{
 
+}
+
+.szolgaltatasok{
+  margin-top: 4em;
 }
 
 
@@ -368,3 +379,79 @@ body{
 
 }
 #star_icon {}
+
+.carousel{
+  height: 20em;
+  margin-bottom: 2.5em;
+  .cycle-slideshow{
+    height: 30em;
+  }
+  img{
+    height:70%;
+    width: 130%;
+  }
+}
+
+.gallery_categories{
+  width: 90%;
+  margin-left: 6%;
+  .one{
+    margin-top: 4%;
+    margin-right: 2%;
+    width: 23%;
+    text-align: center;
+    h2{
+      font-family: DancingScript;
+      font-size: 2.5em;
+      margin-top: 0.2em;
+      margin-bottom: 0.1em;
+      color: white;
+    }
+    p{
+      padding: 0.5em;
+      text-align: justify;
+      color: white;
+    }
+    &:nth-child(1){
+      background-color: #ededed;
+      h2 , p{
+        color: #aaaaaa;
+      }
+    }
+    &:nth-child(1n+2){
+      background-color: #ededed;
+      h2 , p{
+        color: #aaaaaa;
+      }
+    }
+    &:nth-child(2n+2){
+      background-color: #aaaaaa;
+      h2 , p{
+        color: white;
+      }
+    }
+    &:nth-child(4n+4){
+      margin-right: 0em;
+    }
+  }
+}
+
+.gallery{
+  .one{
+    padding: 1em;
+    text-align: center;
+    max-height: 16em;
+    margin-top: 1.5em;
+    img{
+      max-height: 12em;
+    }
+    p{
+      color: #aaaaaa;
+    }
+  }
+}
+
+@media only screen and (max-width:767px) {
+  .gallery_categories{ width: 100%; margin-left: 0;}
+  .gallery_categories .one{ margin-right:0; }
+}
